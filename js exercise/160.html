@@ -1,0 +1,46 @@
+Write a JavaScript program to compute the greatest common divisor (GCD) of two positive integers.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+
+
+<script>
+ function GCD(x,y)
+ {
+    let n;
+if(x>y){
+   n=y;
+
+}
+else if(y>=x)
+{
+    n=x
+}
+
+     let gcd;
+  for(let i=1;i<=n;i++)
+  {
+    if(x%i===0 && y%i===0)
+    {
+        gcd=i;
+    }
+
+  }
+
+ return gcd;
+
+
+
+ }
+ console.log(GCD(3,4));
+ console.log(GCD(30,4));
+ console.log(GCD(15,5));
+ console.log(GCD(30,30));
+</script>
+
+</body>
+</html>

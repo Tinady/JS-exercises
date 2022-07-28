@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html>
+    <head> <head>
+
+        <body>
+          <script> 
+        function check_8(x,y)
+        {
+            var a= x+y;
+            var b= x-y;
+            var c= y-x;
+ 
+              if(a==8)
+              {return "there sum is 8"}
+
+              if(x==8 && y==8)
+              {return "both numbers are 8"}
+
+            else  if(b==8||c==8)
+              {return "there difference is 8"}
+
+            else if(x==8||y==8)
+              {return "one of the numbers is 8"}
+
+            else{
+                return "false";
+            }
+
+
+        }
+
+        console.log(check_8(8,7));
+        console.log(check_8(16,8));
+        console.log(check_8(5,3));
+        console.log(check_8(8,8));
+        </script>
+         
+        </body>
+
+</html>
