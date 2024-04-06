@@ -12,7 +12,7 @@ app.use('/api', appRoute)
 
 
 app.listen(PORT, ()=>{
-    console.log('server is connected to'+ PORT)
+    console.log('server is connected to  '+ PORT)
 })
 
 
