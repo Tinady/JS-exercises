@@ -2,7 +2,6 @@ import { Request, Response } from 'express';
 import nodemailer from 'nodemailer';
 const { EMAIL, PASSWORD } = require('../env');
 
-// Store the timestamp when OTP is generated along with the email as key
 const otpTimestamps: { [email: string]: number } = {};
 
 const sendVerificationEmail = async (req: Request, res: Response) => {
